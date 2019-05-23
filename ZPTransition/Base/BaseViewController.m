@@ -25,7 +25,7 @@
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     
-//    self.navigationController.hideNavBar = self.hideNavBar;
+    self.navigationController.hideNavBar = self.hideNavBar;
 }
 
 

@@ -8,7 +8,7 @@
 
 #import "BaseNavigationController.h"
 
-@interface BaseNavigationController ()<UINavigationControllerDelegate, UIGestureRecognizerDelegate>
+@interface BaseNavigationController ()
 
 @end
 

@@ -11,6 +11,9 @@
 
 #import <UIKit/UIKit.h>
 
+//侧滑距离
+#define PanEdgeInside 50
+
 //位移枚举
 typedef NS_ENUM(NSInteger,ZPPanDirectionType){
     ZPPanDirectionNone          = 0,                //不增加滑动手势

@@ -12,6 +12,23 @@
 #ifdef __OBJC__
 
 #import "ZPPanDirectionStyle.h"
+#import "BaseNavigationController.h"
+#import "BaseViewController.h"
+#import "UIViewController+ZPTransition.h"
+
+#define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
+#define SS(strongSelf)  __strong __typeof(&*self)strongSelf = weakSelf;
+
+
+#define TLDeviceWidth [UIScreen mainScreen].bounds.size.width
+#define TLDeviceHeight [UIScreen mainScreen].bounds.size.height
+
+#define NavBarHeight ([[UIApplication sharedApplication] statusBarFrame].size.height>20?88:64)
+#define EXStatusHeight ([[UIApplication sharedApplication] statusBarFrame].size.height>20?24:0)
+#define TabBarHeight ([[UIApplication sharedApplication] statusBarFrame].size.height>20?83:49)
+#define EXTabHeight ([[UIApplication sharedApplication] statusBarFrame].size.height>20?34:0)
+
+#define KeyWindow UIApplication.sharedApplication.delegate.window
 
 #endif
 

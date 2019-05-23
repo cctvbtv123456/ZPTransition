@@ -20,13 +20,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)setContainScrollView:(UIScrollView *)scrollView isPush:(BOOL)isPush;
 
-- (void)tlPresentViewController:(UIViewController *)vc tlAnimationType:(ZPAnimationType)tlAnimationType animated:(BOOL)animated completion:(void (^__nullable)(void))completion;
+- (void)zpPresentViewController:(UIViewController *)vc animationType:(ZPAnimationType)tlAnimationType animated:(BOOL)animated completion:(void (^__nullable)(void))completion;
 
 //转场动画涉及的视图数组
-- (NSArray *_Nonnull)tl_transitionUIViewFrameViews;
+- (NSArray *_Nonnull)zp_transitionUIViewFrameViews;
 
 //AppStore转场的图片
-- (NSString *_Nonnull)tl_transitionUIViewImage;
+- (NSString *_Nonnull)zp_transitionUIViewImage;
 
 @end
 
@@ -40,7 +40,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, assign) NSInteger index;
 
-- (void)tlPushViewController:(UIViewController *)vc tlAnimationType:(ZPAnimationType)tlAnimationType;
+- (void)zpPushViewController:(UIViewController *)vc animationType:(ZPAnimationType)tlAnimationType;
 
 @end
 

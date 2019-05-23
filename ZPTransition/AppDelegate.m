@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "AnimationTabScrollStyle.h"
+#import "TabTransitionDelegate.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +18,31 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    BaseViewController *vc0 = [NSClassFromString(@"ViewController0") new];
+    BaseNavigationController *Nav0 = [[BaseNavigationController alloc] initWithRootViewController:vc0];
+    
+    UITabBarController *tabBarVC = [UITabBarController new];
+    tabBarVC.viewControllers = @[Nav0];
+    NSArray *titles = @[@"仿AppStore", @"视图位移", @"视图缩小", @"仿抖音评论"];
+    NSArray *normalImages = @[@"tabbar0", @"tabbar1", @"tabbar2", @"tabbar3"];
+    NSArray *highlightImages = @[@"tabbarSelect0", @"tabbarSelect1", @"tabbarSelect2", @"tabbarSelect3"];
+    tabBarVC.delegate = [TabTransitionDelegate shareInstance];
+    [tabBarVC.viewControllers enumerateObjectsUsingBlock:^(UINavigationController * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        obj.index = idx;
+    }];
+    [tabBarVC.tabBar.items enumerateObjectsUsingBlock:^(UITabBarItem * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        obj.title = titles[idx];
+        obj.image = [[UIImage imageNamed:normalImages[idx]] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+        obj.selectedImage = [[UIImage imageNamed:highlightImages[idx]] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    }];
+    tabBarVC.tabBar.tintColor = [UIColor blackColor];
+    tabBarVC.tabBar.barTintColor = [UIColor whiteColor];
+    
+    self.window.rootViewController = tabBarVC;
+    
     return YES;
 }
 

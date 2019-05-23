@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BaseNavigationController : UINavigationController
+@interface BaseNavigationController : UINavigationController <UINavigationControllerDelegate, UIGestureRecognizerDelegate>
 
 @property (nonatomic, assign) BOOL hideNavBar;
 

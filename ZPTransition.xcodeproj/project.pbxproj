@@ -20,6 +20,18 @@
 		0444920B22855F1E008100E5 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0444920A22855F1E008100E5 /* BaseViewController.m */; };
 		0444920E22855FD8008100E5 /* UIViewController+ZPTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 0444920D22855FD8008100E5 /* UIViewController+ZPTransition.m */; };
 		044492142285702E008100E5 /* ZPPushTransitionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 044492132285702E008100E5 /* ZPPushTransitionDelegate.m */; };
+		0482CB922293F665006B8BE8 /* AnimationAppStoreStylePush.m in Sources */ = {isa = PBXBuildFile; fileRef = 0482CB912293F664006B8BE8 /* AnimationAppStoreStylePush.m */; };
+		0482CB9622940159006B8BE8 /* AnimationTabScrollStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 0482CB9522940159006B8BE8 /* AnimationTabScrollStyle.m */; };
+		0482CBA22294026A006B8BE8 /* TableViewCell0.m in Sources */ = {isa = PBXBuildFile; fileRef = 0482CB992294026A006B8BE8 /* TableViewCell0.m */; };
+		0482CBA32294026A006B8BE8 /* ViewController01.m in Sources */ = {isa = PBXBuildFile; fileRef = 0482CB9C2294026A006B8BE8 /* ViewController01.m */; };
+		0482CBA42294026A006B8BE8 /* ViewController02.m in Sources */ = {isa = PBXBuildFile; fileRef = 0482CB9E2294026A006B8BE8 /* ViewController02.m */; };
+		0482CBA52294026A006B8BE8 /* ViewController0.m in Sources */ = {isa = PBXBuildFile; fileRef = 0482CBA02294026A006B8BE8 /* ViewController0.m */; };
+		0494811F2294E68A005DE31F /* TabTransitionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0494811E2294E68A005DE31F /* TabTransitionDelegate.m */; };
+		049481232294E940005DE31F /* ZPImageTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 049481222294E940005DE31F /* ZPImageTool.m */; };
+		049481262294EC84005DE31F /* PressTransitionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 049481252294EC84005DE31F /* PressTransitionDelegate.m */; };
+		0494812A2294F71D005DE31F /* ZPAnimationTypeBottomViewAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 049481292294F71D005DE31F /* ZPAnimationTypeBottomViewAlert.m */; };
+		0494812D229539DC005DE31F /* AnimationUIViewFrameStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 0494812C229539DC005DE31F /* AnimationUIViewFrameStyle.m */; };
+		0494813022953B35005DE31F /* AnimationWindowScaleStylePush.m in Sources */ = {isa = PBXBuildFile; fileRef = 0494812F22953B35005DE31F /* AnimationWindowScaleStylePush.m */; };
 		67340D0F7BAB56F383724B4E /* libPods-ZPTransitionUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 12A5BA763F7DBB8BB5123FA2 /* libPods-ZPTransitionUITests.a */; };
 		6B339091A20E7247D4CFCC02 /* libPods-ZPTransition.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2E6787DC983CE0A626CE86 /* libPods-ZPTransition.a */; };
 		74CC8C6330FD1619BBCB4F41 /* libPods-ZPTransitionTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BD97DD104EC9BE54759E000 /* libPods-ZPTransitionTests.a */; };
@@ -71,6 +83,30 @@
 		0444921022856545008100E5 /* ZPPanDirectionStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPPanDirectionStyle.h; sourceTree = "<group>"; };
 		044492122285702E008100E5 /* ZPPushTransitionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPPushTransitionDelegate.h; sourceTree = "<group>"; };
 		044492132285702E008100E5 /* ZPPushTransitionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPPushTransitionDelegate.m; sourceTree = "<group>"; };
+		0482CB902293F664006B8BE8 /* AnimationAppStoreStylePush.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationAppStoreStylePush.h; sourceTree = "<group>"; };
+		0482CB912293F664006B8BE8 /* AnimationAppStoreStylePush.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationAppStoreStylePush.m; sourceTree = "<group>"; };
+		0482CB9422940159006B8BE8 /* AnimationTabScrollStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationTabScrollStyle.h; sourceTree = "<group>"; };
+		0482CB9522940159006B8BE8 /* AnimationTabScrollStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationTabScrollStyle.m; sourceTree = "<group>"; };
+		0482CB992294026A006B8BE8 /* TableViewCell0.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell0.m; sourceTree = "<group>"; };
+		0482CB9A2294026A006B8BE8 /* TableViewCell0.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell0.h; sourceTree = "<group>"; };
+		0482CB9C2294026A006B8BE8 /* ViewController01.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController01.m; sourceTree = "<group>"; };
+		0482CB9D2294026A006B8BE8 /* ViewController0.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController0.h; sourceTree = "<group>"; };
+		0482CB9E2294026A006B8BE8 /* ViewController02.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController02.m; sourceTree = "<group>"; };
+		0482CB9F2294026A006B8BE8 /* ViewController01.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController01.h; sourceTree = "<group>"; };
+		0482CBA02294026A006B8BE8 /* ViewController0.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController0.m; sourceTree = "<group>"; };
+		0482CBA12294026A006B8BE8 /* ViewController02.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController02.h; sourceTree = "<group>"; };
+		0494811D2294E68A005DE31F /* TabTransitionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabTransitionDelegate.h; sourceTree = "<group>"; };
+		0494811E2294E68A005DE31F /* TabTransitionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabTransitionDelegate.m; sourceTree = "<group>"; };
+		049481212294E940005DE31F /* ZPImageTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPImageTool.h; sourceTree = "<group>"; };
+		049481222294E940005DE31F /* ZPImageTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPImageTool.m; sourceTree = "<group>"; };
+		049481242294EC84005DE31F /* PressTransitionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PressTransitionDelegate.h; sourceTree = "<group>"; };
+		049481252294EC84005DE31F /* PressTransitionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PressTransitionDelegate.m; sourceTree = "<group>"; };
+		049481282294F71D005DE31F /* ZPAnimationTypeBottomViewAlert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPAnimationTypeBottomViewAlert.h; sourceTree = "<group>"; };
+		049481292294F71D005DE31F /* ZPAnimationTypeBottomViewAlert.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPAnimationTypeBottomViewAlert.m; sourceTree = "<group>"; };
+		0494812B229539DC005DE31F /* AnimationUIViewFrameStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationUIViewFrameStyle.h; sourceTree = "<group>"; };
+		0494812C229539DC005DE31F /* AnimationUIViewFrameStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationUIViewFrameStyle.m; sourceTree = "<group>"; };
+		0494812E22953B35005DE31F /* AnimationWindowScaleStylePush.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationWindowScaleStylePush.h; sourceTree = "<group>"; };
+		0494812F22953B35005DE31F /* AnimationWindowScaleStylePush.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationWindowScaleStylePush.m; sourceTree = "<group>"; };
 		095D52220570F65AF2250A2A /* Pods-ZPTransitionUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZPTransitionUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZPTransitionUITests/Pods-ZPTransitionUITests.release.xcconfig"; sourceTree = "<group>"; };
 		12A5BA763F7DBB8BB5123FA2 /* libPods-ZPTransitionUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZPTransitionUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C371B9BE9C9BDCC5355A071 /* Pods-ZPTransition.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZPTransition.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZPTransition/Pods-ZPTransition.debug.xcconfig"; sourceTree = "<group>"; };
@@ -135,11 +171,16 @@
 		044491CE22855A03008100E5 /* ZPTransition */ = {
 			isa = PBXGroup;
 			children = (
+				049481202294E923005DE31F /* Tool */,
 				0444920122855A29008100E5 /* Base */,
 				0444920222855A56008100E5 /* Utils */,
 				0444921122856FF1008100E5 /* PercentDrivenInteractiveDelegate */,
+				0482CB932294012F006B8BE8 /* TabAnimation */,
+				0482CB8F2293F639006B8BE8 /* PushAnimation */,
+				049481272294F6D9005DE31F /* PressAnimation */,
 				044491CF22855A03008100E5 /* AppDelegate.h */,
 				044491D022855A03008100E5 /* AppDelegate.m */,
+				0482CB9722940248006B8BE8 /* Tabbar0 */,
 				044491D222855A03008100E5 /* ViewController.h */,
 				044491D322855A03008100E5 /* ViewController.m */,
 				044491D522855A03008100E5 /* Main.storyboard */,
@@ -198,8 +239,83 @@
 			children = (
 				044492122285702E008100E5 /* ZPPushTransitionDelegate.h */,
 				044492132285702E008100E5 /* ZPPushTransitionDelegate.m */,
+				0494811D2294E68A005DE31F /* TabTransitionDelegate.h */,
+				0494811E2294E68A005DE31F /* TabTransitionDelegate.m */,
+				049481242294EC84005DE31F /* PressTransitionDelegate.h */,
+				049481252294EC84005DE31F /* PressTransitionDelegate.m */,
 			);
 			path = PercentDrivenInteractiveDelegate;
+			sourceTree = "<group>";
+		};
+		0482CB8F2293F639006B8BE8 /* PushAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				0482CB902293F664006B8BE8 /* AnimationAppStoreStylePush.h */,
+				0482CB912293F664006B8BE8 /* AnimationAppStoreStylePush.m */,
+				0494812B229539DC005DE31F /* AnimationUIViewFrameStyle.h */,
+				0494812C229539DC005DE31F /* AnimationUIViewFrameStyle.m */,
+				0494812E22953B35005DE31F /* AnimationWindowScaleStylePush.h */,
+				0494812F22953B35005DE31F /* AnimationWindowScaleStylePush.m */,
+			);
+			path = PushAnimation;
+			sourceTree = "<group>";
+		};
+		0482CB932294012F006B8BE8 /* TabAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				0482CB9422940159006B8BE8 /* AnimationTabScrollStyle.h */,
+				0482CB9522940159006B8BE8 /* AnimationTabScrollStyle.m */,
+			);
+			path = TabAnimation;
+			sourceTree = "<group>";
+		};
+		0482CB9722940248006B8BE8 /* Tabbar0 */ = {
+			isa = PBXGroup;
+			children = (
+				0482CB9B2294026A006B8BE8 /* Contronller */,
+				0482CB982294026A006B8BE8 /* View */,
+			);
+			path = Tabbar0;
+			sourceTree = "<group>";
+		};
+		0482CB982294026A006B8BE8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0482CB9A2294026A006B8BE8 /* TableViewCell0.h */,
+				0482CB992294026A006B8BE8 /* TableViewCell0.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0482CB9B2294026A006B8BE8 /* Contronller */ = {
+			isa = PBXGroup;
+			children = (
+				0482CB9D2294026A006B8BE8 /* ViewController0.h */,
+				0482CBA02294026A006B8BE8 /* ViewController0.m */,
+				0482CB9F2294026A006B8BE8 /* ViewController01.h */,
+				0482CB9C2294026A006B8BE8 /* ViewController01.m */,
+				0482CBA12294026A006B8BE8 /* ViewController02.h */,
+				0482CB9E2294026A006B8BE8 /* ViewController02.m */,
+			);
+			path = Contronller;
+			sourceTree = "<group>";
+		};
+		049481202294E923005DE31F /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				049481212294E940005DE31F /* ZPImageTool.h */,
+				049481222294E940005DE31F /* ZPImageTool.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		049481272294F6D9005DE31F /* PressAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				049481282294F71D005DE31F /* ZPAnimationTypeBottomViewAlert.h */,
+				049481292294F71D005DE31F /* ZPAnimationTypeBottomViewAlert.m */,
+			);
+			path = PressAnimation;
 			sourceTree = "<group>";
 		};
 		89D4CD94D44AFFCF200108E9 /* Frameworks */ = {
@@ -416,13 +532,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				044491D422855A03008100E5 /* ViewController.m in Sources */,
+				0482CBA32294026A006B8BE8 /* ViewController01.m in Sources */,
 				0444920B22855F1E008100E5 /* BaseViewController.m in Sources */,
+				049481232294E940005DE31F /* ZPImageTool.m in Sources */,
 				0444920522855A7B008100E5 /* UITabBar+ZPTabBar.m in Sources */,
+				0494811F2294E68A005DE31F /* TabTransitionDelegate.m in Sources */,
+				0482CB922293F665006B8BE8 /* AnimationAppStoreStylePush.m in Sources */,
+				0482CBA42294026A006B8BE8 /* ViewController02.m in Sources */,
 				044491DF22855A06008100E5 /* main.m in Sources */,
+				0482CBA22294026A006B8BE8 /* TableViewCell0.m in Sources */,
 				0444920E22855FD8008100E5 /* UIViewController+ZPTransition.m in Sources */,
+				0494813022953B35005DE31F /* AnimationWindowScaleStylePush.m in Sources */,
+				0482CBA52294026A006B8BE8 /* ViewController0.m in Sources */,
 				044492142285702E008100E5 /* ZPPushTransitionDelegate.m in Sources */,
+				049481262294EC84005DE31F /* PressTransitionDelegate.m in Sources */,
 				044491D122855A03008100E5 /* AppDelegate.m in Sources */,
 				0444920822855EA1008100E5 /* BaseNavigationController.m in Sources */,
+				0494812D229539DC005DE31F /* AnimationUIViewFrameStyle.m in Sources */,
+				0494812A2294F71D005DE31F /* ZPAnimationTypeBottomViewAlert.m in Sources */,
+				0482CB9622940159006B8BE8 /* AnimationTabScrollStyle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -598,7 +726,10 @@
 				DEVELOPMENT_TEAM = 9CGEWW2EV8;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ZPTransition/PrefixHeader.pch";
 				INFOPLIST_FILE = ZPTransition/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = qingxue.ZPTransition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -614,7 +745,10 @@
 				DEVELOPMENT_TEAM = 9CGEWW2EV8;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ZPTransition/PrefixHeader.pch";
 				INFOPLIST_FILE = ZPTransition/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = qingxue.ZPTransition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -629,7 +763,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9CGEWW2EV8;
 				INFOPLIST_FILE = ZPTransitionTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = qingxue.ZPTransitionTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -645,7 +783,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9CGEWW2EV8;
 				INFOPLIST_FILE = ZPTransitionTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = qingxue.ZPTransitionTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -660,7 +802,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9CGEWW2EV8;
 				INFOPLIST_FILE = ZPTransitionUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = qingxue.ZPTransitionUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -675,7 +821,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9CGEWW2EV8;
 				INFOPLIST_FILE = ZPTransitionUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = qingxue.ZPTransitionUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

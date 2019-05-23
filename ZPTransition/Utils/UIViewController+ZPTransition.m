@@ -7,6 +7,9 @@
 //
 
 #import "UIViewController+ZPTransition.h"
+#import "ZPPushTransitionDelegate.h"
+#import "TabTransitionDelegate.h"
+#import "PressTransitionDelegate.h"
 #import <objc/runtime.h>
 
 static char * const isInteractionKey = "isInteractionKey";
@@ -80,9 +83,10 @@ static char * const panDirectionTypesKey = "panDirectionTypesKey";
 - (void)swizzViewWillAppear:(BOOL)animated{
     if (ZPAnimationTypeUIViewFrame == self.animationType || ZPAnimationTypeWindowScale == self.animationType || ZPAnimationTypeAppStore == self.animationType) {
         
-//        self.navigationController.interactivePopGestureRecognizer.delegate = [TLPushTransitionDelegate shareInstance];
-//        self.navigationController.delegate = [TLPushTransitionDelegate shareInstance];
-//        [TLPushTransitionDelegate shareInstance].popController = self;
+        self.navigationController.interactivePopGestureRecognizer.delegate = [ZPPushTransitionDelegate shareInstance];
+        self.navigationController.delegate = [ZPPushTransitionDelegate shareInstance];
+        [ZPPushTransitionDelegate shareInstance].popController = self;
+        
     }else{
         
     }
@@ -98,32 +102,32 @@ static char * const panDirectionTypesKey = "panDirectionTypesKey";
     [self swizzPresentViewController:viewControllerToPresent animated:YES completion:completion];
 }
 
-- (void)tlPresentViewController:(UIViewController *)vc tlAnimationType:(ZPAnimationType)tlAnimationType animated:(BOOL)animated completion:(void (^__nullable)(void))completion{
+- (void)zpPresentViewController:(UIViewController *)vc animationType:(ZPAnimationType)animationType animated:(BOOL)animated completion:(void (^__nullable)(void))completion{
     
-//    if (TLAnimationBottomViewAlert == tlAnimationType) {
-//
-//        //注意顺序
-//        vc.transitioningDelegate = [TLPressTransitionDelegate shareInstance];
-//        [TLPressTransitionDelegate shareInstance].disMissController = vc;
-//        [[TLPressTransitionDelegate shareInstance] addPanGestureForViewController:vc directionTypes:TLPanDirectionEdgeLeft | TLPanDirectionEdgeUp];
-//        vc.animationType = tlAnimationType;
-//        vc.modalPresentationStyle = UIModalPresentationCustom;//自定义Present
-//    }
+    if (ZPAnimationTypeBottomViewAlert == animationType) {
+
+        //注意顺序
+        vc.transitioningDelegate = [PressTransitionDelegate shareInstance];
+        [PressTransitionDelegate shareInstance].disMissController = vc;
+        [[PressTransitionDelegate shareInstance] addPanGestureForViewController:vc directionTypes:ZPPanDirectionEdgeLeft | ZPPanDirectionEdgeUp];
+        vc.animationType = animationType;
+        vc.modalPresentationStyle = UIModalPresentationCustom;//自定义Present
+    }
     
     [self presentViewController:vc animated:animated completion:completion];
 }
 - (void)setContainScrollView:(UIScrollView *)scrollView isPush:(BOOL)isPush{
-//    if (isPush) {
-//        [TLPushTransitionDelegate shareInstance].scrollView = scrollView;
-//    }else{
-//        [TLPressTransitionDelegate shareInstance].scrollView = scrollView;
-//    }
+    if (isPush) {
+        [ZPPushTransitionDelegate shareInstance].scrollView = scrollView;
+    }else{
+        [PressTransitionDelegate shareInstance].scrollView = scrollView;
+    }
 }
 
-- (NSArray *_Nonnull)tl_transitionUIViewFrameViews{
+- (NSArray *_Nonnull)zp_transitionUIViewFrameViews{
     return nil;
 }
-- (NSString *_Nonnull)tl_transitionUIViewImage{
+- (NSString *_Nonnull)zp_transitionUIViewImage{
     return nil;
 }
 
@@ -173,42 +177,43 @@ static char * const indexKey = "indexKey";
     }else{
         method_exchangeImplementations(originalMethod0, swizzledMethod0);
     }
+
     
 }
 
-//- (instancetype)swizzInitWithRootViewController:(UIViewController *)rootViewController{
-//    self.interactivePopGestureRecognizer.delegate = [ZPPushTransitionDelegate shareInstance];
-//    self.delegate = [ZPPushTransitionDelegate shareInstance];
-//    return [self swizzInitWithRootViewController:rootViewController];
-//}
+- (instancetype)swizzInitWithRootViewController:(UIViewController *)rootViewController{
+    self.interactivePopGestureRecognizer.delegate = [ZPPushTransitionDelegate shareInstance];
+    self.delegate = [ZPPushTransitionDelegate shareInstance];
+    return [self swizzInitWithRootViewController:rootViewController];
+}
 
-- (void)tlPushViewController:(UIViewController *)vc tlAnimationType:(ZPAnimationType)tlAnimationType{
+- (void)zpPushViewController:(UIViewController *)vc animationType:(ZPAnimationType)animationType{
     
-//    if (TLAnimationUIViewFrame == tlAnimationType) {
-//
-//        [TLPushTransitionDelegate shareInstance].popController = vc;
-//        [[TLPushTransitionDelegate shareInstance] addPanGestureForViewController:vc];
-//        vc.animationType = tlAnimationType;
-//
-//
-//    }else if (TLAnimationWindowScale == tlAnimationType){
-//        [TLPushTransitionDelegate shareInstance].popController = vc;
-//        [[TLPushTransitionDelegate shareInstance] addPanGestureForViewController:vc];
-//        vc.animationType = tlAnimationType;
-//
-//    }else if (TLAnimationAppStore == tlAnimationType){
-//
-//        [TLPushTransitionDelegate shareInstance].popController = vc;
-//        [[TLPushTransitionDelegate shareInstance] addPanGestureForViewController:vc directionTypes:TLPanDirectionEdgeLeft |TLPanDirectionEdgeUp];
-//        vc.animationType = tlAnimationType;
-//    }else{
-//
-//        BaseNavigationController *nav = (BaseNavigationController *)self;
-//        self.interactivePopGestureRecognizer.delegate = nav;
-//        self.delegate = nav;
-//    }
-//
-//    [self pushViewController:vc animated:YES];
+    if (ZPAnimationTypeUIViewFrame == animationType) {
+
+        [ZPPushTransitionDelegate shareInstance].popController = vc;
+        [[ZPPushTransitionDelegate shareInstance] addPanGestureForViewController:vc];
+        vc.animationType = animationType;
+
+
+    }else if (ZPAnimationTypeWindowScale == animationType){
+        [ZPPushTransitionDelegate shareInstance].popController = vc;
+        [[ZPPushTransitionDelegate shareInstance] addPanGestureForViewController:vc];
+        vc.animationType = animationType;
+
+    }else if (ZPAnimationTypeAppStore == animationType){
+
+        [ZPPushTransitionDelegate shareInstance].popController = vc;
+        [[ZPPushTransitionDelegate shareInstance] addPanGestureForViewController:vc directionTypes:ZPPanDirectionEdgeLeft |ZPPanDirectionEdgeUp];
+        vc.animationType = animationType;
+    }else{
+
+        BaseNavigationController *nav = (BaseNavigationController *)self;
+        self.interactivePopGestureRecognizer.delegate = nav;
+        self.delegate = nav;
+    }
+
+    [self pushViewController:vc animated:YES];
 }
 
 
